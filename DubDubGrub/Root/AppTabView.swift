@@ -1,6 +1,6 @@
 //
 //  AppTabView.swift
-//  DubDubGrub
+//  DubDubGrubbie
 //
 //  Created by Amin Bagheri on 2022-10-22.
 //
