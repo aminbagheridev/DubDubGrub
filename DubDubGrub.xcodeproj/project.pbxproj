@@ -8,18 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		8821A3BC29046D1200A9909E /* DubDubGrubApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8821A3BB29046D1200A9909E /* DubDubGrubApp.swift */; };
-		8821A3BE29046D1200A9909E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8821A3BD29046D1200A9909E /* ContentView.swift */; };
 		8821A3C029046D1200A9909E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8821A3BF29046D1200A9909E /* Assets.xcassets */; };
 		8821A3C429046D1200A9909E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8821A3C329046D1200A9909E /* Preview Assets.xcassets */; };
+		8821A3CB2904718200A9909E /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8821A3CA2904718200A9909E /* Color+Ext.swift */; };
+		8821A3CD290471D300A9909E /* AppTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8821A3CC290471D300A9909E /* AppTabView.swift */; };
+		8821A3CF290471FD00A9909E /* LocationMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8821A3CE290471FD00A9909E /* LocationMapView.swift */; };
+		8821A3D12904721600A9909E /* LocationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8821A3D02904721600A9909E /* LocationListView.swift */; };
+		8821A3D32904723000A9909E /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8821A3D22904723000A9909E /* ProfileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8821A3B829046D1200A9909E /* DubDubGrub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DubDubGrub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8821A3BB29046D1200A9909E /* DubDubGrubApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DubDubGrubApp.swift; sourceTree = "<group>"; };
-		8821A3BD29046D1200A9909E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8821A3BF29046D1200A9909E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8821A3C129046D1200A9909E /* DubDubGrub.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DubDubGrub.entitlements; sourceTree = "<group>"; };
 		8821A3C329046D1200A9909E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8821A3CA2904718200A9909E /* Color+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Ext.swift"; sourceTree = "<group>"; };
+		8821A3CC290471D300A9909E /* AppTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabView.swift; sourceTree = "<group>"; };
+		8821A3CE290471FD00A9909E /* LocationMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationMapView.swift; sourceTree = "<group>"; };
+		8821A3D02904721600A9909E /* LocationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationListView.swift; sourceTree = "<group>"; };
+		8821A3D22904723000A9909E /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +60,8 @@
 		8821A3BA29046D1200A9909E /* DubDubGrub */ = {
 			isa = PBXGroup;
 			children = (
-				8821A3BB29046D1200A9909E /* DubDubGrubApp.swift */,
-				8821A3BD29046D1200A9909E /* ContentView.swift */,
+				884910D3290473B400A4E18E /* Helpers */,
+				884910D4290473C400A4E18E /* Root */,
 				8821A3BF29046D1200A9909E /* Assets.xcassets */,
 				8821A3C129046D1200A9909E /* DubDubGrub.entitlements */,
 				8821A3C229046D1200A9909E /* Preview Content */,
@@ -67,6 +75,34 @@
 				8821A3C329046D1200A9909E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8821A3D42904724800A9909E /* Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				8821A3CE290471FD00A9909E /* LocationMapView.swift */,
+				8821A3D02904721600A9909E /* LocationListView.swift */,
+				8821A3D22904723000A9909E /* ProfileView.swift */,
+			);
+			path = Tabs;
+			sourceTree = "<group>";
+		};
+		884910D3290473B400A4E18E /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				8821A3CA2904718200A9909E /* Color+Ext.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		884910D4290473C400A4E18E /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				8821A3BB29046D1200A9909E /* DubDubGrubApp.swift */,
+				8821A3CC290471D300A9909E /* AppTabView.swift */,
+				8821A3D42904724800A9909E /* Tabs */,
+			);
+			path = Root;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +175,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8821A3BE29046D1200A9909E /* ContentView.swift in Sources */,
 				8821A3BC29046D1200A9909E /* DubDubGrubApp.swift in Sources */,
+				8821A3CF290471FD00A9909E /* LocationMapView.swift in Sources */,
+				8821A3D12904721600A9909E /* LocationListView.swift in Sources */,
+				8821A3CD290471D300A9909E /* AppTabView.swift in Sources */,
+				8821A3D32904723000A9909E /* ProfileView.swift in Sources */,
+				8821A3CB2904718200A9909E /* Color+Ext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,7 +305,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"DubDubGrub/Preview Content\"";
-				DEVELOPMENT_TEAM = 2VL68VCH8T;
+				DEVELOPMENT_TEAM = 5THPQF974G;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -284,7 +324,7 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.bagheridevelopment.DubDubGrub;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zahramoralalvandi.dubdubgrub;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
@@ -303,7 +343,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"DubDubGrub/Preview Content\"";
-				DEVELOPMENT_TEAM = 2VL68VCH8T;
+				DEVELOPMENT_TEAM = 5THPQF974G;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -322,7 +362,7 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.bagheridevelopment.DubDubGrub;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zahramoralalvandi.dubdubgrub;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
